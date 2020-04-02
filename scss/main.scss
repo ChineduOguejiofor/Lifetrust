@@ -1,0 +1,160 @@
+@import './variables';
+@import './utilities';
+
+// General Styles
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+#navbar {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #e3e3e4;
+  color: #fff;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  overflow: auto;
+  ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    li a {
+      color: black;
+      padding: 0.75rem;
+      margin: 0 0.75rem;
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $main-color;
+        transform: scalex(0);
+        transition: all 0.5s;
+        transform-origin: center;
+      }
+
+      &:hover {
+        &:after {
+          transform: scalex(1);
+        }
+      }
+    }
+  }
+  .logo {
+    // font-family: Poppins-bold;
+    font-weight: 700;
+    color: black;
+  }
+}
+#showcase {
+  color: #fff;
+  background-color: #333;
+  padding: 2rem;
+  position: relative;
+  &:before {
+    content: '';
+    background: url('../img/showcase.jpg') no-repeat 50% 6% / cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+  }
+  .showcase-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    height: 79vh;
+    .showcase-content {
+      z-index: 1;
+      h1 {
+        font-size: 64px;
+        line-height: 1;
+        // font-family: Poppins-bold;
+        font-weight: 700;
+
+        margin-bottom: 1rem;
+      }
+      p {
+        margin-bottom: 1rem;
+      }
+      .btn {
+        border-radius: 30px;
+      }
+    }
+  }
+}
+
+/* Section: What We Do */
+#what .items {
+  display: flex;
+  padding: 1rem;
+}
+
+#what .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#what .items .item i {
+  background: $main-color;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
+
+/* Section: Who We Are */
+#who {
+  display: flex;
+}
+
+#who div {
+  flex: 1;
+}
+
+#who .who-img {
+  background: url('../img/team.jpg') no-repeat center center/cover;
+}
+
+.list {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: $main-color dotted 1px;
+}
+/* Section: Clients */
+#clients .items {
+  display: flex;
+}
+
+#clients .items img {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+#main-footer {
+  border-top: 1px solid #fff;
+}

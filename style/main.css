@@ -1,0 +1,326 @@
+.container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: #207DFE;
+}
+
+.bg-light {
+  background: #f8f9fa;
+  color: #333;
+}
+
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.btn-main, .btn-light, .btn-dark {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-main {
+  color: white;
+  background-color: #0158d1;
+}
+
+.btn-light {
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+.btn-dark {
+  color: #f4f4f4;
+  background-color: #333;
+}
+
+.bg-main {
+  background: #207DFE;
+  color: #000;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #000;
+}
+
+.bg-medium {
+  background: #ccc;
+  color: #000;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+#navbar {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #e3e3e4;
+  color: #fff;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 1.5rem;
+  overflow: auto;
+}
+
+#navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: black;
+  padding: 0.75rem;
+  margin: 0 0.75rem;
+  position: relative;
+}
+
+#navbar ul li a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #207DFE;
+  -webkit-transform: scalex(0);
+          transform: scalex(0);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+#navbar ul li a:hover:after {
+  -webkit-transform: scalex(1);
+          transform: scalex(1);
+}
+
+#navbar .logo {
+  font-weight: 700;
+  color: black;
+}
+
+#showcase {
+  color: #fff;
+  background-color: #333;
+  padding: 2rem;
+  position: relative;
+}
+
+#showcase:before {
+  content: '';
+  background: url("../img/showcase.jpg") no-repeat 50% 6%/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+#showcase .showcase-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 79vh;
+}
+
+#showcase .showcase-container .showcase-content {
+  z-index: 1;
+}
+
+#showcase .showcase-container .showcase-content h1 {
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+#showcase .showcase-container .showcase-content p {
+  margin-bottom: 1rem;
+}
+
+#showcase .showcase-container .showcase-content .btn {
+  border-radius: 30px;
+}
+
+/* Section: What We Do */
+#what .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+}
+
+#what .items .item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#what .items .item i {
+  background: #207DFE;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
+
+/* Section: Who We Are */
+#who {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#who div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#who .who-img {
+  background: url("../img/team.jpg") no-repeat center center/cover;
+}
+
+.list {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #207DFE dotted 1px;
+}
+
+/* Section: Clients */
+#clients .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#clients .items img {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+#main-footer {
+  border-top: 1px solid #fff;
+}
+/*# sourceMappingURL=main.css.map */
